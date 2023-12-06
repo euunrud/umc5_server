@@ -1,5 +1,6 @@
 package umc.spring.controller;
 
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
@@ -25,6 +26,7 @@ public class ReviewController {
     }
 
     @GetMapping
+    @ApiOperation("자신이 작성한 리뷰 조회 API입니다.")
     public Page<ReviewDTO> getReviews(@RequestParam(name = "page") @Valid @CheckPage Integer page) {
         return reviewService.getReviews(page);
     }
