@@ -17,8 +17,6 @@ public class MissionRequest {
     @NotNull(message = "Mission point cannot be null")
     private Integer point;
 
-    // timeLimit이 필수가 아니라면 @NotNull을 제거할 수 있습니다.
     private Date timeLimit;
 
-    // 추가적인 필드가 있다면 여기에 추가할 수 있습니다.
 }

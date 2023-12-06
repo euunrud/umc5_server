@@ -16,6 +16,5 @@ public class ReviewRequest {
     @NotBlank(message = "Review content cannot be blank")
     private String content;
 
-    // 추가적인 필드가 있다면 여기에 추가할 수 있습니다.
 }
 
