@@ -32,6 +32,5 @@ public class Store {
 
     @JsonIgnore
     @OneToMany(mappedBy = "store", cascade = CascadeType.ALL)
-    @Builder.Default
     private List<Review> mission = new ArrayList<>();
 }
