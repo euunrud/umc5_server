@@ -11,5 +11,4 @@ public class MissionDTO {
     private String condition;
     private int point;
     private Date timeLimit;
-    // 필요한 경우 더 많은 필드 추가
 }

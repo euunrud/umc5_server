@@ -8,5 +8,4 @@ public class ManageMissionDTO {
     private String location;
     private int msCnt;
     private int point;
-    // UserDTO 등 필요한 필드 추가
 }

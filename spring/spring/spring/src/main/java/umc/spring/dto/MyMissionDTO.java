@@ -9,5 +9,4 @@ public class MyMissionDTO {
     private String sof;
     private MissionDTO mission;
     private ManageMissionDTO manageMission;
-    // UserDTO 등 필요한 필드 추가
 }
