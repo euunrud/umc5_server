@@ -28,4 +28,9 @@ public class MyMission {
     @OneToOne
     @JoinColumn(name = "mngId")
     private ManageMission manageMission;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "userId")
+    private User user;
+
 }
