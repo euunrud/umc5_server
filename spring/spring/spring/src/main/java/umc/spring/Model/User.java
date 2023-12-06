@@ -31,13 +31,4 @@ public class User {
     private int point;
     private String phoneNum;
     private String email;
-
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-    private List<MyMission> missions = new ArrayList<>();
-
-    public void addMission(MyMission myMission) {
-        missions.add(myMission);
-        myMission.setUser(this);
-    }
-
 }
