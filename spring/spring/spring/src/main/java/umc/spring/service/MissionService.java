@@ -4,14 +4,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import umc.spring.Model.Mission;
 import umc.spring.Model.Store;
-import umc.spring.converter.MissionConverter;
 import umc.spring.dto.MissionRequest;
 import umc.spring.repository.MissionRepository;
 import umc.spring.repository.StoreRepository;
 
 import javax.persistence.EntityNotFoundException;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 @Service
 public class MissionService {
