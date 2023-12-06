@@ -29,7 +29,7 @@ public class StoreController {
     }
 
     @GetMapping("/{storeId}/missions")
-    @ApiOperation("Get missions for a specific store with paging")
+    @ApiOperation("가게의 미션 조회 API입니다.")
     public ResponseEntity<Page<MissionDTO>> getStoreMissions(
             @PathVariable Long storeId,
             @CheckPage @RequestParam(name = "page") Integer page) {
